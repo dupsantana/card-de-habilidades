@@ -1,0 +1,135 @@
+/*FORMATAÇÃO POR TAG*/
+
+ul{
+    list-style-image: url('https://i.sstatic.net/5kI3v.png');
+    padding-left: 27px;
+}
+
+/*FORMATAÇÃO POR ID*/
+
+#page-home
+{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Tahoma;
+    color: #ffffff;
+    background-color: #b600ce;
+    background: linear-gradient(90deg, #b600ce 0%, #300055 100%);
+}
+
+#container
+{
+    padding: 1rem 2rem;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-user {
+    width: 300px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.img-user:hover { 
+    transform: translate(2px) scale(1.1);
+}
+
+.name-user { 
+    color: #ffffff;
+    cursor: default;
+}
+
+.box-card
+{
+    padding: 4rem;
+    border-radius: 45px;
+    background-color: #1c1c1c;
+    box-shadow: 2px 7px 8px #000000;
+}
+
+.link-email
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: transform 1s;
+
+}
+
+.link-email:hover
+{
+    color: #ffba58;
+    transform: translate(2px) scale(1.1);
+    margin-bottom: 1rem;
+}
+
+.icon-email
+{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.contato-wa
+{
+    margin-left: 12px;
+}
+
+.box-icon-rs
+{
+    width: 100%;
+    gap: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-rs
+{
+    text-decoration: none;
+    transition: transfor 1s;
+    width: 50px;
+}
+
+.icon-rs:hover
+{
+    transform: translate(2px) scale(1.1);
+}
+
+@media screen and (min-width: 900px) {
+    .box-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .line-border
+    {
+        height: 450px;
+        border-right: 2px solid #ffffff;
+        margin-right: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+.line-border
+{
+    height: 450px;
+    border-bottom: 2px solid #ffffff;
+    margin-right: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
